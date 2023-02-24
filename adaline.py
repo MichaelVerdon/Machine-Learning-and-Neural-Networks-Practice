@@ -1,6 +1,7 @@
 import random
 #########################################################
 #Train a single perceptron to recognise 2 matrix patterns
+#Supervised learning
 #########################################################
 input1 = [
     [0, 1, 0], #Cross Pattern
@@ -109,11 +110,14 @@ def main():
         epoch()
         results = adaline()
         epochs += 1
+        print("#################################################################")
         print("Result from epoch {}: {}".format(epochs, results))
-        roundedWeights = [round(i,10) for i in adaline.weights]
+        roundedWeights = [round(i,5) for i in adaline.weights]
         print("Weights = {}".format(roundedWeights))
     
+    print("#################################################################")
     print("Took {} epochs".format(epochs))
+    print("Final weights are: {}".format(roundedWeights))
 
 main()
 #########################################################
