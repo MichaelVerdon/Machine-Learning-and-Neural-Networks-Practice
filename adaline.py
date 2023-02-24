@@ -1,5 +1,7 @@
 import random
 #########################################################
+#Train a single perceptron to recognise 2 matrix patterns
+#########################################################
 input1 = [
     [0, 1, 0], #Cross Pattern
     [1, 1, 1],
